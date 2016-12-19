@@ -32,7 +32,7 @@ app.post('/subscribers', function(req, res) {
     subscriber.id = Math.floor(Date.now() / 1000) + req.body.email;
     console.log(req.body);
     subscribers.push(subscriber);
-    res.status(200).send("Successfully posted ingredient");
+    res.status(200).send("Successfully posted");
 });
 
 app.listen(6069);
